@@ -1,0 +1,106 @@
+*{
+      margin: 0%;
+      padding: 0%;
+      box-sizing: border-box;
+}
+body
+{
+    background-color:#1A1A1D ;
+}
+
+
+h1
+{
+    text-align: center ;
+    font-style: italic;
+    text-decoration: underline;
+    color: white;
+}
+.form
+{
+    text-align: center;
+    max-width: 900px;
+}
+.form-element 
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+     
+}
+label
+{
+     font-weight: 800;
+}
+input
+{
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.index {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.index th, .index td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+    width: 25%; /* Ensure each column takes equal space */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Ensure the table header is displayed in a single row */
+.index thead tr {
+    display: table-row; /* Ensure row formatting */
+    padding: 100px;
+}
+
+
+
+.input-element{
+    display: flex;
+    justify-content: space-between;  /* Spaces between elements */
+    align-items: flex-start;         /* Align items to the top */
+    width: 80%;
+    margin: 50px auto;
+    
+    
+}
+
+.table-container
+{
+    flex: 1;
+    background-color:  purple ;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height:600px ;
+    color: white;
+    position: relative;
+    
+}
+.form-container{
+    flex: 1;
+    background-color: #FF007F;
+    min-height: 600px;
+    color: #2C3E50;
+}
+.whitespace
+{
+    background-color: white;
+    width: 15px;
+}
+.btn
+{
+    background-color: yellow;
+    width: 100px;
+    border-radius: 10px;
+}
+.index thead {
+    position: sticky;
+    top: 0;
+    background-color: purple; /* Keep header visible */
+    z-index: 10; /* Ensures it stays on top */
+}
